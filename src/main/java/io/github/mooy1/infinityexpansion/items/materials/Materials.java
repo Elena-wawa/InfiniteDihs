@@ -81,32 +81,32 @@ public final class Materials {
     );
     public static final SlimefunItemStack COBBLE_1 = new SlimefunItemStack(
             "COMPRESSED_COBBLESTONE_1",
-            Material.ANDESITE,
-            "&7Single Compressed Cobblestone",
+            Material.STONE_BRICK_STAIRS,
+            "&7Single Compressed Stone Brick Stairs",
             "&89 cobblestone combined"
     );
     public static final SlimefunItemStack COBBLE_2 = new SlimefunItemStack(
             "COMPRESSED_COBBLESTONE_2",
-            Material.ANDESITE,
-            "&7Double Compressed Cobblestone",
+            Material.STONE_BRICK_STAIRS,
+            "&7Double Compressed Stone Brick Stairs",
             "&881 cobblestone combined"
     );
     public static final SlimefunItemStack COBBLE_3 = new SlimefunItemStack(
             "COMPRESSED_COBBLESTONE_3",
-            Material.STONE,
-            "&7Triple Compressed Cobblestone",
+            Material.STONE_BRICK_STAIRS,
+            "&7Triple Compressed Stone Brick Stairs",
             "&8729 cobblestone combined"
     );
     public static final SlimefunItemStack COBBLE_4 = new SlimefunItemStack(
             "COMPRESSED_COBBLESTONE_4",
-            Material.STONE,
-            "&7Quadruple Compressed Cobblestone",
+            Material.STONE_BRICK_STAIRS,
+            "&7Quadruple Compressed Stone Brick Stairs",
             "&86,561 cobblestone combined"
     );
     public static final SlimefunItemStack COBBLE_5 = new SlimefunItemStack(
             "COMPRESSED_COBBLESTONE_5",
-            Material.POLISHED_ANDESITE,
-            "&7Quintuple Compressed Cobblestone",
+            Material.STONE_BRICK_STAIRS,
+            "&7Quintuple Compressed Stone Brick Stairs",
             "&859,049 cobblestone combined"
     );
     public static final SlimefunItemStack MAGSTEEL = new SlimefunItemStack(
@@ -282,28 +282,28 @@ public final class Materials {
     public static void setup(InfinityExpansion plugin) {
         new EnderEssence(Groups.MAIN_MATERIALS, ENDER_ESSENCE, new NamespacedKey(plugin, "ender_essence")).register(plugin);
         registerEnhanced(COBBLE_1, new ItemStack[] {
-                new ItemStack(Material.COBBLESTONE), new ItemStack(Material.COBBLESTONE), new ItemStack(Material.COBBLESTONE),
-                new ItemStack(Material.COBBLESTONE), new ItemStack(Material.COBBLESTONE), new ItemStack(Material.COBBLESTONE),
+                new ItemStack(Material.STONE_BRICK_STAIRS), new ItemStack(null), new ItemStack(null),
+                new ItemStack(Material.COBBLESTONE), new ItemStack(Material.COBBLESTONE), new ItemStack(null),
                 new ItemStack(Material.COBBLESTONE), new ItemStack(Material.COBBLESTONE), new ItemStack(Material.COBBLESTONE)
         });
         registerEnhanced(COBBLE_2, new ItemStack[] {
-                COBBLE_1, COBBLE_1, COBBLE_1,
-                COBBLE_1, COBBLE_1, COBBLE_1,
+                COBBLE_1, null, null,
+                COBBLE_1, COBBLE_1, null,
                 COBBLE_1, COBBLE_1, COBBLE_1
         });
         registerEnhanced(COBBLE_3, new ItemStack[] {
-                COBBLE_2, COBBLE_2, COBBLE_2,
-                COBBLE_2, COBBLE_2, COBBLE_2,
+                COBBLE_2, null, null,
+                COBBLE_2, COBBLE_2, null,
                 COBBLE_2, COBBLE_2, COBBLE_2
         });
         registerEnhanced(COBBLE_4, new ItemStack[] {
-                COBBLE_3, COBBLE_3, COBBLE_3,
-                COBBLE_3, COBBLE_3, COBBLE_3,
+                COBBLE_3, null, null,
+                COBBLE_3, COBBLE_3, null,
                 COBBLE_3, COBBLE_3, COBBLE_3
         });
         registerEnhanced(COBBLE_5, new ItemStack[] {
-                COBBLE_4, COBBLE_4, COBBLE_4,
-                COBBLE_4, COBBLE_4, COBBLE_4,
+                COBBLE_4, null, null,
+                COBBLE_4, COBBLE_4, null,
                 COBBLE_4, COBBLE_4, COBBLE_4
         });
         registerEnhanced(VOID_DUST, new ItemStack[] {
