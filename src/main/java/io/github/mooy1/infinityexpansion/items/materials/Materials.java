@@ -107,7 +107,7 @@ public final class Materials {
             "COMPRESSED_COBBLESTONE_5",
             Material.STONE_BRICK_STAIRS,
             "&7Quintuple Compressed Stone Brick Stairs",
-            "&87776 cobblestone combined"
+            "&87776 stone brick stairs combined"
     );
     public static final SlimefunItemStack MAGSTEEL = new SlimefunItemStack(
             "MAGSTEEL",
@@ -283,8 +283,8 @@ public final class Materials {
         new EnderEssence(Groups.MAIN_MATERIALS, ENDER_ESSENCE, new NamespacedKey(plugin, "ender_essence")).register(plugin);
         registerEnhanced(COBBLE_1, new ItemStack[] {
                 new ItemStack(Material.STONE_BRICK_STAIRS), null, null,
-                new ItemStack(Material.COBBLESTONE), new ItemStack(Material.COBBLESTONE), null,
-                new ItemStack(Material.COBBLESTONE), new ItemStack(Material.COBBLESTONE), new ItemStack(Material.COBBLESTONE)
+                new ItemStack(Material.STONE_BRICK_STAIRS), new ItemStack(Material.STONE_BRICK_STAIRS), null,
+                new ItemStack(Material.STONE_BRICK_STAIRS), new ItemStack(Material.STONE_BRICK_STAIRS), new ItemStack(Material.STONE_BRICK_STAIRS)
         });
         registerEnhanced(COBBLE_2, new ItemStack[] {
                 COBBLE_1, null, null,
