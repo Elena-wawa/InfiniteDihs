@@ -101,7 +101,7 @@ public final class Materials {
             "COMPRESSED_COBBLESTONE_4",
             Material.STONE_BRICK_STAIRS,
             "&7Quadruple Compressed Stone Brick Stairs",
-            "&1296 stone brick stairs combined"
+            "&81296 stone brick stairs combined"
     );
     public static final SlimefunItemStack COBBLE_5 = new SlimefunItemStack(
             "COMPRESSED_COBBLESTONE_5",
