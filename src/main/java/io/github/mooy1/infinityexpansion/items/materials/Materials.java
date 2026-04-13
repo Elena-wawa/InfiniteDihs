@@ -83,31 +83,31 @@ public final class Materials {
             "COMPRESSED_COBBLESTONE_1",
             Material.STONE_BRICK_STAIRS,
             "&7Single Compressed Stone Brick Stairs",
-            "&89 cobblestone combined"
+            "&86 stone brick stairs combined"
     );
     public static final SlimefunItemStack COBBLE_2 = new SlimefunItemStack(
             "COMPRESSED_COBBLESTONE_2",
             Material.STONE_BRICK_STAIRS,
             "&7Double Compressed Stone Brick Stairs",
-            "&881 cobblestone combined"
+            "&836 stone brick stairs combined"
     );
     public static final SlimefunItemStack COBBLE_3 = new SlimefunItemStack(
             "COMPRESSED_COBBLESTONE_3",
             Material.STONE_BRICK_STAIRS,
             "&7Triple Compressed Stone Brick Stairs",
-            "&8729 cobblestone combined"
+            "&8216 stone brick stairs combined"
     );
     public static final SlimefunItemStack COBBLE_4 = new SlimefunItemStack(
             "COMPRESSED_COBBLESTONE_4",
             Material.STONE_BRICK_STAIRS,
             "&7Quadruple Compressed Stone Brick Stairs",
-            "&86,561 cobblestone combined"
+            "&1296 stone brick stairs combined"
     );
     public static final SlimefunItemStack COBBLE_5 = new SlimefunItemStack(
             "COMPRESSED_COBBLESTONE_5",
             Material.STONE_BRICK_STAIRS,
             "&7Quintuple Compressed Stone Brick Stairs",
-            "&859,049 cobblestone combined"
+            "&87776 cobblestone combined"
     );
     public static final SlimefunItemStack MAGSTEEL = new SlimefunItemStack(
             "MAGSTEEL",
