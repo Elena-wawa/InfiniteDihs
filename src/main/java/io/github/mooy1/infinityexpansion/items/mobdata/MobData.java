@@ -140,10 +140,12 @@ public final class MobData {
                 new ItemStack(Material.STONE_SWORD, 1), new ItemStack(Material.BONE, 64), new ItemStack(Material.STONE_SWORD, 1)
         }).addDrop(Material.BONE, 1).addDrop(Material.ARROW, 3).register(plugin);
         new MobDataCard(FISHING, MobDataTier.ADVANCED, new ItemStack[] {
-                new ItemStack(Material.SALMON, 64), me.gallowsdove.foxymachines.Items.POSEIDONS_FISHING_ROD, new ItemStack(Material.COD, 64),
+                new ItemStack(Material.SALMON, 64), new SlimefunItemStack(Items.POSEIDONS_FISHING_ROD, 1), new ItemStack(Material.COD, 64),
                 new ItemStack(Material.TROPICAL_FISH, 64), EMPTY_DATA_CARD, new ItemStack(Material.PUFFERFISH, 64),
                 new ItemStack(Material.COD, 64), new ItemStack(Material.WATER_BUCKET, 1), new ItemStack(Material.SALMON, 64)
-        }).addDrop(Material.COD, 4, 3).addDrop(Material.SALMON, 4, 3).addDrop(Material.PUFFERFISH, 4, 3).addDrop(Material.COD, 4, 3).addDrop(Material.LILY_PAD, 10).addDrop(me.gallowsdove.foxymachines.Items.POSEIDONS_BLESSING, 250).register(plugin);
+        }).addDrop(Material.COD, 4, 3).addDrop(Material.SALMON, 4, 3)
+                .addDrop(Material.PUFFERFISH, 4, 3).addDrop(Material.COD, 4, 3)
+                .addDrop(Material.LILY_PAD, 10).addDrop(Items.POSEIDONS_BLESSING, 250).register(plugin);
         new MobDataCard(ENDERMEN, MobDataTier.ADVANCED, new ItemStack[] {
                 new ItemStack(Material.ENDER_EYE, 16), new ItemStack(Material.OBSIDIAN, 64), new ItemStack(Material.ENDER_EYE, 16),
                 new ItemStack(Material.ENDER_PEARL, 16), EMPTY_DATA_CARD, new ItemStack(Material.ENDER_PEARL, 16),
