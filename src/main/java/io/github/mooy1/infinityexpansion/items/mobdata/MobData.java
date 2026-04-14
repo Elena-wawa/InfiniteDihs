@@ -140,12 +140,12 @@ public final class MobData {
                 new ItemStack(Material.STONE_SWORD, 1), new ItemStack(Material.BONE, 64), new ItemStack(Material.STONE_SWORD, 1)
         }).addDrop(Material.BONE, 1).addDrop(Material.ARROW, 3).register(plugin);
         new MobDataCard(FISHING, MobDataTier.ADVANCED, new ItemStack[] {
-                new ItemStack(Material.SALMON, 64), new SlimefunItemStack(Items.POSEIDONS_FISHING_ROD, 1), new ItemStack(Material.COD, 64),
+                new ItemStack(Material.SALMON, 64), new SlimefunItemStack(Materials.LAPIS_SINGULARITY, 1), new ItemStack(Material.COD, 64),
                 new ItemStack(Material.TROPICAL_FISH, 64), EMPTY_DATA_CARD, new ItemStack(Material.PUFFERFISH, 64),
                 new ItemStack(Material.COD, 64), new ItemStack(Material.WATER_BUCKET, 1), new ItemStack(Material.SALMON, 64)
         }).addDrop(Material.COD, 4, 3).addDrop(Material.SALMON, 4, 3)
                 .addDrop(Material.PUFFERFISH, 4, 3).addDrop(Material.COD, 4, 3)
-                .addDrop(Material.LILY_PAD, 10).addDrop(Items.POSEIDONS_BLESSING, 250).register(plugin);
+                .addDrop(Material.LILY_PAD, 10).addDrop(Material.AXOLOTL_SPAWN_EGG, 2500).register(plugin);
         new MobDataCard(ENDERMEN, MobDataTier.ADVANCED, new ItemStack[] {
                 new ItemStack(Material.ENDER_EYE, 16), new ItemStack(Material.OBSIDIAN, 64), new ItemStack(Material.ENDER_EYE, 16),
                 new ItemStack(Material.ENDER_PEARL, 16), EMPTY_DATA_CARD, new ItemStack(Material.ENDER_PEARL, 16),
@@ -186,7 +186,7 @@ public final class MobData {
                 new ItemStack(Material.END_CRYSTAL, 64), new SlimefunItemStack(Materials.VOID_INGOT, 32), new ItemStack(Material.CHORUS_FLOWER, 64),
                 SlimefunItems.INFUSED_ELYTRA, EMPTY_DATA_CARD, new ItemStack(Material.DRAGON_HEAD, 1),
                 new SlimefunItemStack(SlimefunItems.ENDER_LUMP_3, 64), new SlimefunItemStack(Materials.VOID_INGOT, 32), new ItemStack(Material.DRAGON_BREATH, 64)
-        }).addDrop(Materials.VOID_DUST, 1).addDrop(Materials.ENDER_ESSENCE, 4).addDrop(Material.DRAGON_EGG, 10_000).register(plugin);
+        }).addDrop(Materials.VOID_DUST, 3, 1).addDrop(Materials.ENDER_ESSENCE, 4).addDrop(Material.DRAGON_EGG, 10000).register(plugin);
         new MobDataCard(BEE, MobDataTier.NEUTRAL, new ItemStack[] {
                 new ItemStack(Material.HONEYCOMB_BLOCK, 16), new ItemStack(Material.HONEY_BLOCK, 16), new ItemStack(Material.HONEYCOMB_BLOCK, 16),
                 new ItemStack(Material.HONEY_BLOCK, 16), EMPTY_DATA_CARD, new ItemStack(Material.HONEY_BLOCK, 16),
