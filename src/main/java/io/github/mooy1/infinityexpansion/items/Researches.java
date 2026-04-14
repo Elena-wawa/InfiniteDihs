@@ -127,7 +127,7 @@ public final class Researches {
                 MobData.CREEPER, MobData.GUARDIAN, MobData.WITCH
         );
         create(22, "advanced_mob_data", "Advanced Mob Data", 45,
-                MobData.WITHER_SKELETON, MobData.ENDERMEN, MobData.IRON_GOLEM, MobData.BLAZE
+                MobData.WITHER_SKELETON, MobData.ENDERMEN, MobData.IRON_GOLEM, MobData.BLAZE, MobData.FISHING
         );
         create(23, "boss_mob_data", "Boss Mob Data", 60,
                 MobData.WITHER, MobData.ENDER_DRAGON
