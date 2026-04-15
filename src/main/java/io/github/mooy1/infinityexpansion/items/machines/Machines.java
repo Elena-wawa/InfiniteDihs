@@ -191,6 +191,14 @@ public final class Machines {
             MachineLore.speed(1),
             MachineLore.energyPerSecond(24)
     );
+    public static final SlimefunItemStack BASIC_STAIRS = new SlimefunItemStack(
+            "BASIC_STAIRS_GEN",
+            Material.SMOOTH_STONE,
+            "&9Basic &dStone Brick Stairs Generator",
+            "",
+            MachineLore.speed(2),
+            MachineLore.energyPerSecond(48)
+    );
     public static final SlimefunItemStack ADVANCED_COBBLE = new SlimefunItemStack(
             "ADVANCED_COBBLE_GEN",
             Material.SMOOTH_STONE,
@@ -320,6 +328,11 @@ public final class Machines {
                 new ItemStack(Material.WATER_BUCKET), Materials.COBBLE_2, new ItemStack(Material.LAVA_BUCKET),
                 Materials.MAGSTEEL, Materials.MACHINE_CIRCUIT, Materials.MAGSTEEL
         }).material(Material.COBBLESTONE).speed(1).energyPerTick(24).register(plugin);
+        new MaterialGenerator(Groups.BASIC_MACHINES, BASIC_STAIRS, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
+                Materials.MAGSTEEL, new ItemStack(Material.CRAFTING_TABLE), Materials.MAGSTEEL,
+                new ItemStack(Material.WATER_BUCKET), Materials.COBBLE_2, new ItemStack(Material.LAVA_BUCKET),
+                Materials.MAGSTEEL, Materials.MACHINE_CIRCUIT, Materials.MAGSTEEL
+        }).material(Material.STONE_BRICK_STAIRS).speed(2).energyPerTick(48).register(plugin);
         new MaterialGenerator(Groups.ADVANCED_MACHINES, ADVANCED_COBBLE, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
                 Materials.MAGSTEEL_PLATE, BASIC_COBBLE, Materials.MAGSTEEL_PLATE,
                 new ItemStack(Material.WATER_BUCKET), Materials.COBBLE_3, new ItemStack(Material.LAVA_BUCKET),
