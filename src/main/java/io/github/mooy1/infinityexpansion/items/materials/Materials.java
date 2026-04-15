@@ -174,6 +174,11 @@ public final class Materials {
             Material.BRICKS,
             "&6Copper Singularity"
     );
+    public static final SlimefunItemStack STAIRS_SINGULARITY = new SlimefunItemStack(
+            "STAIRS_SINGULARITY",
+            Material.STONE_BRICK_STAIRS,
+            "&dStone Brick Stairs Singularity"
+    );
     public static final SlimefunItemStack ZINC_SINGULARITY = new SlimefunItemStack(
             "ZINC_SINGULARITY",
             Material.IRON_BLOCK,
@@ -379,6 +384,7 @@ public final class Materials {
                 MACHINE_PLATE, MACHINE_CORE, INFINITE_INGOT, INFINITE_INGOT, MACHINE_CORE, MACHINE_PLATE
         });
         new Singularity(COPPER_SINGULARITY, SlimefunItems.COPPER_INGOT, 3000).register(plugin);
+        new Singularity(STAIRS_SINGULARITY, Material.STONE_BRICK_STAIRS, 5000).register(plugin);
         new Singularity(ZINC_SINGULARITY, SlimefunItems.ZINC_INGOT, 3000).register(plugin);
         new Singularity(TIN_SINGULARITY, SlimefunItems.TIN_INGOT, 3000).register(plugin);
         new Singularity(ALUMINUM_SINGULARITY, SlimefunItems.ALUMINUM_INGOT, 3000).register(plugin);
