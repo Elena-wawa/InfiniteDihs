@@ -29,6 +29,7 @@ public final class Researches {
         );
         create(2, "singularities", "Creating Singularities", 35,
                 Materials.ALUMINUM_SINGULARITY,
+                Materials.STAIRS_SINGULARITY,
                 Materials.SILVER_SINGULARITY,
                 Materials.COPPER_SINGULARITY,
                 Materials.LEAD_SINGULARITY,
@@ -72,7 +73,8 @@ public final class Researches {
         );
         create(9, "starter_machines", "Starter Machines", 15,
                 Machines.BASIC_COBBLE, Machines.BASIC_GROWER,
-                Machines.BASIC_TREE, Quarries.BASIC_QUARRY
+                Machines.BASIC_TREE, Quarries.BASIC_QUARRY,
+                Machines.BASIC_STAIRS
         );
         create(10, "strainers", "Material Strainers", 10,
                 Blocks.STRAINER_BASE, Materials.BASIC_STRAINER,
