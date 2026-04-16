@@ -30,6 +30,8 @@ public final class Researches {
         create(2, "singularities", "Creating Singularities", 35,
                 Materials.ALUMINUM_SINGULARITY,
                 Materials.STAIRS_SINGULARITY,
+                Materials.STAIRS_SINGULARITY_SINGULARITY,
+                Materials.STAIRS_SINGULARITY_SINGULARITY_SINGULARITY,
                 Materials.SILVER_SINGULARITY,
                 Materials.COPPER_SINGULARITY,
                 Materials.LEAD_SINGULARITY,
