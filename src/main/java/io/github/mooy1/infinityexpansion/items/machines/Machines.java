@@ -194,8 +194,8 @@ public final class Machines {
     public static final SlimefunItemStack BASIC_STAIRS = new SlimefunItemStack(
             "BASIC_STAIRS_GEN",
             Material.SMOOTH_STONE,
-            "&9Basic &dStone Brick Stairs Generator",
-            "",
+            "&9Basic &dStairs Generator",
+            "&8&oGenerates stone brick stairs unenthusiastically",
             MachineLore.speed(2),
             MachineLore.energyPerSecond(48)
     );
@@ -229,7 +229,7 @@ public final class Machines {
             "&fSingularity Constructor",
             "&7Condenses large amounts of resources",
             "",
-            MachineLore.speed(1),
+            MachineLore.speed(2),
             MachineLore.energyPerSecond(120)
     );
     public static final SlimefunItemStack INFINITY_CONSTRUCTOR = new SlimefunItemStack(
@@ -292,7 +292,7 @@ public final class Machines {
                 Materials.MAGSTEEL, Materials.MAGSTEEL, Materials.MAGSTEEL,
                 Materials.MACHINE_PLATE, SlimefunItems.CARBON_PRESS_3, Materials.MACHINE_PLATE,
                 Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT
-        }).speed(1).energyPerTick(120).register(plugin);
+        }).speed(2).energyPerTick(120).register(plugin);
         new SingularityConstructor(Groups.INFINITY_CHEAT, INFINITY_CONSTRUCTOR, InfinityWorkbench.TYPE, new ItemStack[] {
                 null, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, Materials.MACHINE_PLATE, null,
                 null, Materials.VOID_INGOT, Materials.INFINITE_CIRCUIT, Materials.INFINITE_CIRCUIT, Materials.VOID_INGOT, null,
@@ -329,8 +329,8 @@ public final class Machines {
                 Materials.MAGSTEEL, Materials.MACHINE_CIRCUIT, Materials.MAGSTEEL
         }).material(Material.COBBLESTONE).speed(1).energyPerTick(24).register(plugin);
         new MaterialGenerator(Groups.BASIC_MACHINES, BASIC_STAIRS, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
-                Materials.MAGSTEEL, new ItemStack(Material.CRAFTING_TABLE), Materials.MAGSTEEL,
-                new ItemStack(Material.WATER_BUCKET), Materials.COBBLE_2, new ItemStack(Material.LAVA_BUCKET),
+                Materials.MAGSTEEL, SlimefunItems.PORTABLE_CRAFTER, Materials.MAGSTEEL,
+                Materials.ADVANCED_STRAINER, Materials.COBBLE_3, Materials.TITANIUM,
                 Materials.MAGSTEEL, Materials.MACHINE_CIRCUIT, Materials.MAGSTEEL
         }).material(Material.STONE_BRICK_STAIRS).speed(2).energyPerTick(48).register(plugin);
         new MaterialGenerator(Groups.ADVANCED_MACHINES, ADVANCED_COBBLE, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
