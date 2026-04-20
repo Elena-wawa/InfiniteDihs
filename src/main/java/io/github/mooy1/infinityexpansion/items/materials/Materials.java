@@ -184,7 +184,7 @@ public final class Materials {
             Material.STONE_BRICK_STAIRS,
             "&d&lStone Brick Stairs Singularity Singularity"
     );
-    public static final SlimefunItemStack STAIRS_SINGULARITY = new SlimefunItemStack(
+    public static final SlimefunItemStack STAIRS_SINGULARITY_SINGULARITY_SINGULARITY = new SlimefunItemStack(
             "STAIRS_SINGULARITY_SINGULARITY_SINGULARITY",
             Material.STONE_BRICK_STAIRS,
             "&d&l★Stone Brick Stairs Singularity Singularity Singularity★",
@@ -396,8 +396,8 @@ public final class Materials {
         });
         new Singularity(COPPER_SINGULARITY, SlimefunItems.COPPER_INGOT, 3000).register(plugin);
         new Singularity(STAIRS_SINGULARITY, Material.STONE_BRICK_STAIRS, 5000).register(plugin);
-        new Singularity(STAIRS_SINGULARITY_SINGULARITY, Material.STONE_BRICK_STAIRS, 1000).register(plugin);
-        new Singularity(STAIRS_SINGULARITY_SINGULARITY_SINGULARITY, Material.STONE_BRICK_STAIRS, 100).register(plugin);
+        new Singularity(STAIRS_SINGULARITY_SINGULARITY, STAIRS_SINGULARITY, 1000).register(plugin);
+        new Singularity(STAIRS_SINGULARITY_SINGULARITY_SINGULARITY, STAIRS_SINGULARITY_SINGULARITY, 100).register(plugin);
         new Singularity(ZINC_SINGULARITY, SlimefunItems.ZINC_INGOT, 3000).register(plugin);
         new Singularity(TIN_SINGULARITY, SlimefunItems.TIN_INGOT, 3000).register(plugin);
         new Singularity(ALUMINUM_SINGULARITY, SlimefunItems.ALUMINUM_INGOT, 3000).register(plugin);
