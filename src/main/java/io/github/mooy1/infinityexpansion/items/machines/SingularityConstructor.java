@@ -22,6 +22,7 @@ import io.github.mooy1.infinityexpansion.utils.Util;
 import io.github.mooy1.infinitylib.common.StackUtils;
 import io.github.mooy1.infinitylib.machines.AbstractMachineBlock;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
@@ -48,7 +49,7 @@ public final class SingularityConstructor extends AbstractMachineBlock implement
                 amt += item.getAmount();
             }
         }
-        String id = StackUtils.getIdOrType(stacks[0]);
+        String id = getKey(stacks[0]);
         Recipe recipe = new Recipe((SlimefunItemStack) itemStack, stacks[0], id, amt);
         RECIPE_LIST.add(recipe);
         RECIPE_MAP.put(id, new Pair<>(RECIPE_LIST.size() - 1, recipe));
@@ -109,7 +110,7 @@ public final class SingularityConstructor extends AbstractMachineBlock implement
             inputID = null;
         }
         else {
-            inputID = StackUtils.getIdOrType(input);
+            inputID = getKey(input);
         }
 
         // load data
@@ -187,6 +188,18 @@ public final class SingularityConstructor extends AbstractMachineBlock implement
         setProgress(b.getLocation(), progress);
 
         return takeCharge;
+    }
+
+    private static String getKey(@Nonnull ItemStack item) {
+        ItemStack compare = item.clone();
+        compare.setAmount(1);
+
+        SlimefunItem sf = SlimefunItem.getByItem(compare);
+        if (sf != null) {
+            return "SF:" + sf.getId();
+        }
+
+        return "VANILLA:" + StackUtils.getIdOrType(compare);
     }
 
     @Override

@@ -25,7 +25,6 @@ import org.bukkit.inventory.PlayerInventory;
 import io.github.mooy1.infinityexpansion.items.blocks.Blocks;
 import io.github.mooy1.infinityexpansion.items.blocks.InfinityWorkbench;
 import io.github.mooy1.infinitylib.common.Scheduler;
-import io.github.mooy1.infinitylib.common.StackUtils;
 import io.github.mooy1.infinitylib.machines.MenuBlock;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -304,10 +303,28 @@ public final class InfinityGroup extends FlexItemGroup {
                     continue;
                 }
 
-                String id = StackUtils.getIdOrType(recipeItem);
+                ItemStack recipeCompare = recipeItem.clone();
+                recipeCompare.setAmount(1);
+                SlimefunItem recipeSf = SlimefunItem.getByItem(recipeCompare);
 
                 for (ItemStack item : inv.getContents()) { //each slot in their inv
-                    if (item != null && StackUtils.getIdOrType(item).equals(id)) { //matches recipe
+                    if (item == null) {
+                        continue;
+                    }
+
+                    ItemStack compare = item.clone();
+                    compare.setAmount(1);
+                    SlimefunItem itemSf = SlimefunItem.getByItem(compare);
+
+                    boolean matches;
+                    if (recipeSf != null && itemSf != null) {
+                        matches = recipeSf.getId().equals(itemSf.getId());
+                    }
+                    else {
+                        matches = compare.isSimilar(recipeCompare);
+                    }
+
+                    if (matches) { //matches recipe
                         //get item
                         ItemStack output = item.clone();
                         output.setAmount(1);
