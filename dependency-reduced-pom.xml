@@ -82,15 +82,15 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>1.18.24</version>
+      <groupId>com.github.Slimefun</groupId>
+      <artifactId>Slimefun4</artifactId>
+      <version>RC-35</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-simple</artifactId>
-      <version>2.0.9</version>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.24</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -102,7 +102,7 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
-      <version>5.11.0</version>
+      <version>5.8.2</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>
@@ -154,6 +154,13 @@
           <groupId>org.apache.maven.resolver</groupId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.local</groupId>
+      <artifactId>FoxyMachines</artifactId>
+      <version>MODIFIED</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/FoxyMachines.jar</systemPath>
     </dependency>
   </dependencies>
   <properties>
